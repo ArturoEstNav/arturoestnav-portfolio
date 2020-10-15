@@ -1,12 +1,10 @@
-.navbar {
+.custom-navbar {
   justify-content: space-between;
   background: white;
+  padding: 0 32px;
+
+  .footer {
+    justify-content: space-between;
+  }
 }
 
-.navbar .navbar-collapse {
-  flex-grow: 0;
-}
-
-.navbar .navbar-brand img {
-  width: 40px;
-}
