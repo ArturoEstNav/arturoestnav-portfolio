@@ -1,10 +1,48 @@
 .custom-navbar {
-  justify-content: space-between;
+  display: flex;
+  justify-content: center;
   background: white;
-  padding: 0 32px;
+  margin: 0;
+
+  @media screen and (min-width: $small){
+
+  }
+
+  @media screen and (min-width: $medium){
+
+  }
+
+  @media screen and (min-width: $large){
+
+  }
+
+  .main {
+    position: fixed;
+    top: 0;
+  }
 
   .footer {
     justify-content: space-between;
   }
 }
 
+.navbar-links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 300px;
+  height: 48px;
+  padding: 0 32px;
+
+  @media screen and (min-width: $small){
+    width: 500px;
+  }
+
+  @media screen and (min-width: $medium){
+    width: 500px;
+  }
+
+  @media screen and (min-width: $large){
+    width: 500px;
+  }
+}

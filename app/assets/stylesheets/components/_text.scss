@@ -1,8 +1,4 @@
-
-.custom-container {
-  width: 100vw;
-  height: calc(100vh - 48px);
-  padding: 0 32px;
+h1, h2, h3 {
 
   @media screen and (min-width: $small){
 
@@ -17,10 +13,7 @@
   }
 }
 
-.greeting {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
+h4, h5, h6 {
 
   @media screen and (min-width: $small){
 
@@ -35,8 +28,8 @@
   }
 }
 
-.mail {
-  height: calc(100vh - 96px);
+p {
+
 
   @media screen and (min-width: $small){
 
@@ -51,20 +44,6 @@
   }
 }
 
-.container-projects {
-
-
-
-  @media screen and (min-width: $small){
-
-  }
-
-  @media screen and (min-width: $medium){
-
-  }
-
-  @media screen and (min-width: $large){
-
-  }
-
+a {
+  text-decoration: none;
 }
