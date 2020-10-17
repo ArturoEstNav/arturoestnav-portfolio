@@ -1,12 +1,12 @@
 <div class="custom-container greeting">
-  <h1>Hi, I am Arturo Estrada and <br>
+  <h1>My name is <strong>Arturo Estrada</strong>, <br>
   I am a fullstack web developer</h1>
 </div>
 <div class="custom-container">
   <%= render "shared/about" %>
 </div>
 <div class="custom-container">
-  <%= render "shared/project_list" %>
+  <%= render "shared/project_list", projects: @projects%>
 </div>
 <div class="custom-container mailing">
   <%= render "shared/mailing" %>
