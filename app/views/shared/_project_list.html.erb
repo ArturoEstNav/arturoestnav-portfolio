@@ -1,8 +1,23 @@
-<h2>
-  Software projects
-</h2>
-<ul>
-  <% projects.each do |project|%>
-  <li><%= project.name %></li>
-  <% end %>
-</ul>
+<div class="container-projects">
+  <h2>
+    Software projects
+  </h2>
+  <ul>
+    <% projects.each do |project|%>
+
+    <li>
+      <div class="container-project">
+        <div>
+          <h3><%= project.name %></h3>
+          <p> <%= project.description %> </p>
+          <%= link_to "Visit page", project.url %>
+        </div>
+        <div>
+          <%= image_tag "https://picsum.photos/350", alt: "alttext" %>
+        </div>
+      </div>
+    </li>
+
+    <% end %>
+  </ul>
+</div>

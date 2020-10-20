@@ -1,8 +1,6 @@
-
 .custom-container {
-  width: 100vw;
-  height: calc(100vh - 48px);
-  padding: 0 32px;
+  width: 100%;
+  padding: 32px;
 
   @media screen and (min-width: $small){
 
@@ -21,12 +19,31 @@
   display: flex;
   align-items: center;
   justify-content: space-around;
+  height: 100vh;
 
   @media screen and (min-width: $small){
 
   }
 
   @media screen and (min-width: $medium){
+
+  }
+
+  @media screen and (min-width: $large){
+
+  }
+}
+
+.about {
+  height: auto;
+
+  @media screen and (min-width: $small){
+
+  }
+
+  @media screen and (min-width: $medium){
+    height: calc(100vh - 48px);
+    display: flex;
 
   }
 
@@ -36,7 +53,9 @@
 }
 
 .mail {
-  height: calc(100vh - 96px);
+  height: calc(100vh - 144px);
+  padding: 32px 0;
+
 
   @media screen and (min-width: $small){
 
@@ -51,20 +70,32 @@
   }
 }
 
-.container-projects {
+.projects {
+  height: auto;
 
+}
 
+.container-project {
 
-  @media screen and (min-width: $small){
-
-  }
 
   @media screen and (min-width: $medium){
-
+    padding: 32px 0;
+    display: flex;
   }
 
   @media screen and (min-width: $large){
 
   }
 
+}
+
+.container-project div {
+
+  @media screen and (min-width: $medium){
+    flex-basis: 50%;
+  }
+
+  @media screen and (min-width: $large){
+
+  }
 }

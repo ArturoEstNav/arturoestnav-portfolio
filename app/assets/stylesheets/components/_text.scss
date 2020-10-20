@@ -44,6 +44,20 @@ p {
   }
 }
 
+// This section is meant to override ugly character standard behavior
+// not necesarily text but undesirable characters
+
 a {
   text-decoration: none;
+  color: inherit;
+  &:hover{
+    text-decoration: none;
+    color: inherit;
+    font-weight: 600;
+  }
+}
+
+ul {
+  list-style: none;
+  padding: 0;
 }
