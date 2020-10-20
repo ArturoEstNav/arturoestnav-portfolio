@@ -1,8 +1,9 @@
-.custom-navbar {
+.custom-navbar-main, .custom-navbar-footer {
   display: flex;
   justify-content: center;
-  background: white;
+  background-color: transparent;
   margin: 0;
+  width: 100%;
 
   @media screen and (min-width: $small){
 
@@ -15,16 +16,17 @@
   @media screen and (min-width: $large){
 
   }
-
-  .main {
-    position: fixed;
-    top: 0;
-  }
-
-  .footer {
-    justify-content: space-between;
-  }
 }
+
+.custom-navbar-main {
+  position: fixed;
+}
+
+.custom-navbar-footer {
+  background-color: $blue;
+  color: white;
+}
+
 
 .navbar-links {
   display: flex;
