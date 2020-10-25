@@ -20,14 +20,9 @@
 
 }
 
-#new_match a {
-  padding: 0;
-}
-
 // custom carousel
 
 .custom-carousel {
-  // border: 5px solid #333;
   overflow: hidden;
 }
 
@@ -69,9 +64,9 @@
   }
   .custom-carousel-slide {
     position: absolute;
-    background-color: $bone-gray;
+    background-color: gray;
     transition: 250ms ease-in-out;
-    border: 1px solid $element-gray;
+    border: 1px solid coral;
     border-radius: 4px;
     box-sizing: border-box;
     padding: 16px;
@@ -96,7 +91,6 @@
     &:hover {
       box-shadow: 4px 4px 4px rgba(60, 69, 65, .25);
     }
-
 
   }
 }
