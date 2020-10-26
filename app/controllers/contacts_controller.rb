@@ -24,6 +24,5 @@ class ContactsController < ApplicationController
                                     :email,
                                     :nickname,
                                     :message)
-
   end
 end
