@@ -34,7 +34,7 @@ class ProjectsController < ApplicationController
     params.require(:project).permit(:name,
                                     :description,
                                     :url,
-                                    :screenshot,
-                                    :mobile_screenshot)
+                                    :mobile_screenshot,
+                                    screenshots: [])
   end
 end
