@@ -5,14 +5,12 @@ class ContactsController < ApplicationController
   end
 
   def create
-    @contact = Contact.new(contact_params)
+    @contact = Contact.new(params[:contact])
     @contact.request = request
     if @contact.deliver
       flash.now[:error] = nil
     else
-      flash.now[:error] = "Something went wrong,
-                          please email me at
-                          contact@arturoestnav.com"
+      flash.now[:error] = "Something went wrong, please email me at contact@arturoestnav.com"
       render :new
     end
   end
