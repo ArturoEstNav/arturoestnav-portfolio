@@ -4,7 +4,7 @@
   <%= f.input :name %>
   <%= f.input :description %>
   <%= f.input :url %>
-  <%= f.input :screenshot, as: :file %>
+  <%= f.input :screenshots, as: :file, input_html: { multiple: true } %>
   <%= f.input :mobile_screenshot, as: :file %>
   <%= f.button :submit %>
 <% end %>

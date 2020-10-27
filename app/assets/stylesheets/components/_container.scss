@@ -35,7 +35,8 @@
 }
 
 .about {
-  height: auto;
+  display: inline-block;
+  // height: auto;
 
   @media screen and (min-width: $small){
 

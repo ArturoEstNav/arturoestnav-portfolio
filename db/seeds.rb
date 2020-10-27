@@ -1,20 +1,23 @@
+require "open-uri"
 # This file should contain all the record creation needed to seed the database with its default values.
 # The data can then be loaded with the rails db:seed command (or created alongside the database with db:setup).
 puts "Clearing database"
 Project.destroy_all
 
-puts "Creating Clarify project"
-clarify = Project.new(
-  name: "Clarify",
-  description: "wake up",
-  url: "https://clarify-gucciferx.herokuapp.com/"
-  )
-clarify.save
-
 puts "Creating Remote Scanner project"
 remote_scanner = Project.new(
   name: "Remote scanner",
-  description: "wake up now",
-  url: "https://www.remotescanner.work/"
-  )
+  description: "A job aggregator created to aid developers find remote employment options quickly
+and gather all desirable postings on a single place.",
+  url: "https://www.remotescanner.work/")
+
 remote_scanner.save
+
+puts "Creating Clarify project"
+clarify = Project.new(
+  name: "Clarify",
+  description: "An application developed with the intention of connecting wellbeing professionals with patients
+through plans facilitating the track of individual progress and result comparison.",
+  url: "https://clarify-gucciferx.herokuapp.com/")
+
+clarify.save
