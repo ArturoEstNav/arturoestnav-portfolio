@@ -39,9 +39,9 @@ document.addEventListener('turbolinks:load', () => {
 const setCarousel = (jobList) => {
   // add a class to 1st element in the array of carousel
   let track = document.querySelector(`#${jobList} .custom-carousel-track`);
-  let slides = Array.from(track.children[0].children);
-  let prevButton = document.querySelector(`#${jobList} .custom-carousel-header .custom-controls`).children[0];
-  let nextButton = document.querySelector(`#${jobList} .custom-carousel-header .custom-controls`).children[1];
+  let slides = Array.from(track.children);
+  let prevButton = document.querySelector(`#${jobList} .custom-controls`).children[0];
+  let nextButton = document.querySelector(`#${jobList} .custom-controls`).children[1];
   let slideSize = (slides[0].getBoundingClientRect().width + 24);
   slides[0].className += " current";
 
@@ -75,6 +75,5 @@ const setCarousel = (jobList) => {
   })
 }
 
-setCarousel('saved');
-setCarousel('suggested');
-setCarousel('posted');
+setCarousel('remote-scanner');
+setCarousel('clarify');
