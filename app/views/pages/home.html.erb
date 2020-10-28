@@ -2,11 +2,11 @@
   <h1>My name is <strong>Arturo Estrada</strong>, <br>
   I am a fullstack web developer</h1>
 </div>
-<div class="custom-container-mail" id="about" >
-  <%= render "shared/about" %>
+<div class="custom-container about" id="about" >
+  <%= render "shared/about", icons: @icons %>
 </div>
 <div class="custom-container projects" id="projects">
-  <%= render "shared/project_list", projects: @projects%>
+  <%= render "shared/project_list", projects: @projects %>
 </div>
 <div class="custom-container mailing" id="contact">
   <%= render "shared/mailing" %>

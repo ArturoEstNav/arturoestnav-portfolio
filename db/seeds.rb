@@ -18,6 +18,6 @@ clarify = Project.new(
   name: "Clarify",
   description: "An application developed with the intention of connecting wellbeing professionals with patients
 through plans facilitating the track of individual progress and result comparison.",
-  url: "https://clarify-gucciferx.herokuapp.com/")
+  url: "https://clarify-portfolio.herokuapp.com/")
 
 clarify.save
