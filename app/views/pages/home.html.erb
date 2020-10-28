@@ -2,12 +2,16 @@
   <h1>My name is <strong>Arturo Estrada</strong>, <br>
   I am a fullstack web developer</h1>
 </div>
-<!-- <div class="custom-container"> -->
-  <%= render "shared/about" %>
-<!-- </div> -->
-<div class="custom-container projects">
-  <%= render "shared/project_list", projects: @projects%>
+<div class="custom-container about" id="about" >
+  <%= render "shared/about", icons: @icons %>
 </div>
+
+<div class="custom-container projects" id="projects">
+  <%= render "shared/project_list", projects: @projects %>
+</div>
+<div class="custom-container mailing" id="contact">
+  <%= render "shared/mailing" %>
+</div
 <div class="custom-container mailing">
   <div class="mail">
     <%= render "contacts/new" %>

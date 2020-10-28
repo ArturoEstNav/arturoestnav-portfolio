@@ -9,7 +9,7 @@
         <div>
           <h3><%= Project.first.name %></h3>
           <p> <%= Project.first.description %> </p>
-          <%= link_to "Visit page", Project.first.url %>
+          <%= link_to "Visit page", Project.first.url, target: :_blank %>
         </div>
         <div>
           <div class="custom-carousel" id="remote-scanner">
@@ -32,7 +32,7 @@
         <div>
           <h3><%= Project.last.name %></h3>
           <p> <%= Project.last.description %> </p>
-          <%= link_to "Visit page", Project.last.url %>
+          <%= link_to "Visit page", Project.last.url, target: :_blank %>
         </div>
         <div>
           <div class="custom-carousel" id="clarify">

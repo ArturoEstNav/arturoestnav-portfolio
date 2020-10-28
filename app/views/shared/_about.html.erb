@@ -1,4 +1,4 @@
-<div class="about">
+<!-- <div class="about"> -->
   <div>
     <div>
       <h3>Where did I came from?</h3>
@@ -7,8 +7,25 @@
           developing my programmer skills.
       </p>
     </div>
+    <h3> Languages </h3>
+    <div class="container-project">
+      <% icons.each do |language, url| %>
+        <div class="container-language">
+          <%= cl_image_tag url, crop: :fill, width: 30, height: 30 %>
+          <p><%= language.capitalize %></p>
+        </div>
+      <% end %>
+    </div>
 
- <!--    <div>
+
+ <!--
+  hash.each do |k, v|
+    groups[v] = groups[v] || []
+    groups[v].push(k)
+  end
+
+
+    <div>
       <h4>Intuitive design</h4>
       <p>My intent is to make clean, easy to use websites</p>
     </div>
@@ -22,4 +39,4 @@
       <p>My job is to make the user forget that this site is designed</p>
     </div> -->
   </div>
-</div>
+<!-- </div> -->
