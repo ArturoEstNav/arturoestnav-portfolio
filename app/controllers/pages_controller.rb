@@ -10,5 +10,7 @@ class PagesController < ApplicationController
                 ruby: "portfolio-icon-05_fd8edc",
                 css: "portfolio-icon-03_jlxhse",
                 git: "portfolio-icon-02_bpkjvi" }
+
+    @contact = Contact.new
   end
 end
