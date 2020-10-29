@@ -8,7 +8,7 @@ puts "Creating Remote Scanner project"
 remote_scanner = Project.new(
   name: "Remote scanner",
   description: "A job aggregator created to aid developers find remote employment options quickly
-and gather all desirable postings on a single place.",
+and gather all desirable postings in a single place.",
   url: "https://www.remotescanner.work/")
 
 remote_scanner.save
