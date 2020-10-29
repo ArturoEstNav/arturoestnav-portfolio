@@ -1,47 +1,13 @@
-h1, h2, h3 {
+h1, h2, h3, h4, h5, h6  {
+  padding-bottom: 24px;
 
-  @media screen and (min-width: $small){
 
-  }
-
-  @media screen and (min-width: $medium){
-
-  }
-
-  @media screen and (min-width: $large){
-
-  }
 }
 
-h4, h5, h6 {
-
-  @media screen and (min-width: $small){
-
-  }
-
-  @media screen and (min-width: $medium){
-
-  }
-
-  @media screen and (min-width: $large){
-
-  }
-}
 
 p {
 
 
-  @media screen and (min-width: $small){
-
-  }
-
-  @media screen and (min-width: $medium){
-
-  }
-
-  @media screen and (min-width: $large){
-
-  }
 }
 
 // This section is meant to override ugly character standard behavior
@@ -50,10 +16,11 @@ p {
 a {
   text-decoration: none;
   color: inherit;
+  font-weight: 600;
   &:hover{
     text-decoration: none;
     color: inherit;
-    font-weight: 600;
+    opacity: .7;
   }
 }
 
