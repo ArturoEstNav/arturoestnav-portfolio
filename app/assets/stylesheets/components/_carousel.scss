@@ -1,17 +1,19 @@
 .carousel-control-prev,
 .carousel-control-next {
-  color: pink;
+  color: green;
   position: inherit;
-}
 
-.fa-caret-left::after,
-.fa-caret-right::after {
-  color: pink;
-}
+  &:active {
+    color: green;
+    position: inherit;
 
-.fa-caret-left::before,
-.fa-caret-right::before {
-  color: pink;
+  }
+
+   &:hover {
+    color: green;
+    position: inherit;
+
+  }
 }
 
 .custom-card-content {
@@ -24,23 +26,22 @@
   overflow: hidden;
 }
 
-.custom-carousel-header {
-  padding: 0 16px;
+// .custom-carousel-header {
+//   padding: 0 16px;
+//   display: flex;
+//   justify-content: space-between;
+
+.custom-controls {
+  width: 100%;
   display: flex;
   justify-content: space-between;
-
-  .custom-controls {
-    width: 80px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    font-size: 20pt;
-
-    div:hover {
-      cursor: pointer;
-    }
+  align-items: center;
+  font-size: 20pt;
+  div:hover {
+    cursor: pointer;
   }
 }
+// }
 
 .custom-carousel-track {
   height: 300px;
