@@ -12,7 +12,6 @@
    &:hover {
     color: green;
     position: inherit;
-
   }
 }
 
@@ -20,16 +19,9 @@
   overflow: auto;
 }
 
-// custom carousel
-
 .custom-carousel {
   overflow: hidden;
 }
-
-// .custom-carousel-header {
-//   padding: 0 16px;
-//   display: flex;
-//   justify-content: space-between;
 
 .custom-controls {
   width: 100%;
@@ -41,7 +33,6 @@
     cursor: pointer;
   }
 }
-// }
 
 .custom-carousel-track {
   height: 300px;
@@ -51,13 +42,11 @@
   transition: transform 250ms ease-in;
 
   @media screen and (min-width: $small) {
-    // border: 5px solid red;
     height: 300px;
     padding: 0px;
   }
 
   @media screen and (min-width: $medium) {
-    // border: 1px solid blue;
     height: 300px;
     padding: 0px;
   }
