@@ -1,21 +1,12 @@
-<h2>Say Hello</h2>
-
-<%= form_for @contact do |f| %>
-  <%= f.label :name %><br>
-  <%= f.text_field :name, required: true %>
-
-  <%= f.label :email %><br>
-  <%= f.text_field :email, required: true %>
-
-  <%= f.label :message %><br>
-  <%= f.text_field :message, as: :text %>
-
-  <div class="hidden">
-    <%= f.label :nickname %><br>
-    <%= f.text_field :nickname, hint: "Don't fill me" %>
-  </div>
-
-  <%= f.submit "send message", class: "button" %><br>
-
-<% end %>
-
+<h2>Let's meet</h2>
+<div class="container-mail">
+  <%= simple_form_for @contact do |f| %>
+    <%= f.input :name, required: true %>
+    <%= f.input :email, required: true %>
+    <%= f.input :message, as: :text  %>
+    <div class="hidden">
+      <%= f.input :nickname, hint: "Don't fill me" %>
+    </div>
+    <%= f.button :submit %>
+  <% end %>
+</div>
