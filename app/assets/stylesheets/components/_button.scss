@@ -4,11 +4,10 @@
   width: 145px;
   box-sizing: border-box;
   color: white;
-  font-weight: normal;
+  font-weight: bold;
   transition: font-weight ease-in-out 250ms;
 
   &:hover {
-    font-weight: bold;
-    color: white;
+    color: rgba(255, 255, 255, .75);
   }
 }
