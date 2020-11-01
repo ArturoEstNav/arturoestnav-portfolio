@@ -1,0 +1,14 @@
+.custom-button {
+  background-color: $blue;
+  padding: 12px;
+  width: 145px;
+  box-sizing: border-box;
+  color: white;
+  font-weight: normal;
+  transition: font-weight ease-in-out 250ms;
+
+  &:hover {
+    font-weight: bold;
+    color: white;
+  }
+}
