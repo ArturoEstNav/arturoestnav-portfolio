@@ -1,0 +1,13 @@
+.custom-button {
+  background-color: $blue;
+  padding: 12px;
+  width: 145px;
+  box-sizing: border-box;
+  color: white;
+  font-weight: bold;
+  transition: font-weight ease-in-out 250ms;
+
+  &:hover {
+    color: rgba(255, 255, 255, .75);
+  }
+}

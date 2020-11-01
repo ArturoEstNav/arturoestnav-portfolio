@@ -101,3 +101,11 @@
 .contact-block {
   display: block;
 }
+
+.container-mail {
+  display: block;
+  @media screen and (min-width: $small){
+    width: 75vw;
+    margin: 0 auto;
+  }
+}
