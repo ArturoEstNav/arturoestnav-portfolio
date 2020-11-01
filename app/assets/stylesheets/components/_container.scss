@@ -1,18 +1,6 @@
 .custom-container {
   width: 100%;
   padding: 48px;
-
-  @media screen and (min-width: $small){
-
-  }
-
-  @media screen and (min-width: $medium){
-
-  }
-
-  @media screen and (min-width: $large){
-
-  }
 }
 
 .greeting {
@@ -20,54 +8,17 @@
   align-items: center;
   justify-content: space-around;
   height: 100vh;
-
-  @media screen and (min-width: $small){
-
-  }
-
-  @media screen and (min-width: $medium){
-
-  }
-
-  @media screen and (min-width: $large){
-
-  }
 }
 
 .about {
   padding-top: 56px;
-
-  @media screen and (min-width: $small){
-
-  }
-
   @media screen and (min-width: $medium){
-    // height: calc(100vh - 48px);
     display: flex;
-
-  }
-
-  @media screen and (min-width: $large){
-
   }
 }
 
 .mail {
-  // height: calc(100vh - 144px);
   padding: 32px 0;
-
-
-  @media screen and (min-width: $small){
-
-  }
-
-  @media screen and (min-width: $medium){
-
-  }
-
-  @media screen and (min-width: $large){
-
-  }
 }
 
 .container-section {
@@ -76,27 +27,19 @@
 
 .projects {
   height: auto;
-
 }
 
 .container-project {
   display: flex;
   flex-direction: column;
-
   padding: 32px 0 32px 32px;
 
   @media screen and (min-width: $small){
-    // display: grid;
     padding: 32px 0;
-    // display: grid;
-    // grid-template-columns: 1fr 1fr;
     display: flex;
     flex-direction: row;
-    // justify-content: space-around;
-     align-items: start;
+    align-items: start;
   }
-
-
 }
 
 .project-image {

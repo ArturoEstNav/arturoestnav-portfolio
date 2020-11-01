@@ -1,22 +1,8 @@
 .custom-navbar-main, .custom-navbar-footer {
   display: flex;
   justify-content: center;
-  // background-color: transparent;
   margin: 0;
   width: 100%;
-  // background: rgb(49,232,45);
-
-  @media screen and (min-width: $small){
-
-  }
-
-  @media screen and (min-width: $medium){
-
-  }
-
-  @media screen and (min-width: $large){
-
-  }
 }
 
 .custom-navbar-main {
@@ -39,14 +25,6 @@
   padding: 0 32px;
 
   @media screen and (min-width: $small){
-    width: 500px;
-  }
-
-  @media screen and (min-width: $medium){
-    width: 500px;
-  }
-
-  @media screen and (min-width: $large){
     width: 500px;
   }
 }
