@@ -21,6 +21,12 @@
 
 .custom-carousel {
   overflow: hidden;
+  width: 209px;
+  @media screen and (min-width: $small) {
+    flex-basis: 350px;
+    width: 400px;
+
+  }
 }
 
 .custom-controls {
@@ -29,8 +35,9 @@
   justify-content: space-between;
   align-items: center;
   font-size: 20pt;
-  div:hover {
-    cursor: pointer;
+
+  @media screen and (min-width: $small) {
+    padding: 0 24px;
   }
 }
 
@@ -54,7 +61,6 @@
     position: absolute;
     background-color: gray;
     transition: 250ms ease-in-out;
-    border: 1px solid coral;
     border-radius: 4px;
     box-sizing: border-box;
     padding: 16px;
