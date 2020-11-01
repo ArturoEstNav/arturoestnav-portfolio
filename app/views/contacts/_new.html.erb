@@ -1,5 +1,5 @@
-<h2>Let's meet</h2>
-<div class="container-section container-mail">
+<h2 class="container-section">Let's meet</h2>
+<div class="container-mail">
   <%= simple_form_for @contact do |f| %>
     <%= f.input :name, required: true %>
     <%= f.input :email, required: true %>
@@ -10,4 +10,3 @@
     <%= f.button :submit, class: "custom-button" %>
   <% end %>
 </div>
-
