@@ -135,7 +135,7 @@ Rails.application.configure do
     :password => ENV['SENDGRID_PASSWORD'],
     :domain => 'arturoestnav.com',
     :address => 'smtp.sendgrid.net',
-    :port => 25587,
+    :port => 465,
     :authentication => :plain,
     :enable_starttls_auto => true
   }
