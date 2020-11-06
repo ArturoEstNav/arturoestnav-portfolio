@@ -13,6 +13,7 @@ include MailForm::Delivery
       :subject => "Potential employer",
       :to => "contact@arturoestnav.com",
       :from => "contact@arturoestnav.com"
+      # %("#{name}" <#{email}>)
     }
   end
 end
