@@ -1,5 +1,6 @@
 class ContactsController < ApplicationController
   skip_before_action :authenticate_user!, only: [:new, :create]
+  require 'mail_form'
   def new
     @contact = Contact.new
   end
@@ -15,12 +16,12 @@ class ContactsController < ApplicationController
     end
   end
 
-  # private
+  private
 
-  # def contact_params
-  #   params.require(:contact).permit(:name,
-  #                                   :email,
-  #                                   :nickname,
-  #                                   :message)
-  # end
+  def contact_params
+    params.require(:contact).permit(:name,
+                                    :email,
+                                    :nickname,
+                                    :message)
+  end
 end
