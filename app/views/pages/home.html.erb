@@ -8,9 +8,15 @@
 <div class="custom-container projects" id="projects">
   <%= render "shared/project_list", projects: @projects %>
 </div>
-<!-- <div class="custom-container mailing" id="contact">
-  <%= render "shared/mailing" %>
-</div> -->
+<div class="container-successful-contact">
+  <div>
+    <h4>Thank you for reaching out</h4>
+    <p>I check emails daily at 4pm and 8pm central time </p>
+    <p>Expect an answer real soon</p>
+    <br>
+    <%= link_to "Go back to site", root_path %>
+  </div>
+</div>
 <div class="custom-container mailing">
   <div class="mail">
     <%= render "contacts/new" %>
