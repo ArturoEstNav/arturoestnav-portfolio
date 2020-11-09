@@ -6,7 +6,6 @@
   &:active {
     color: green;
     position: inherit;
-
   }
 
    &:hover {
@@ -25,7 +24,6 @@
   @media screen and (min-width: $small) {
     flex-basis: 350px;
     width: 400px;
-
   }
 }
 

@@ -2,6 +2,14 @@ h1, h2, h3, h4, h5, h6  {
   padding-bottom: 24px;
 }
 
+h1 {
+  text-align: center;
+
+  @media screen and (min-width: $small){
+    text-align: left;
+  }
+}
+
 // This section is meant to override ugly character standard behavior
 // not necesarily text but undesirable characters
 
