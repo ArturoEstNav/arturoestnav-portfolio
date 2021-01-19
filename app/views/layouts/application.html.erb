@@ -9,7 +9,7 @@
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload', defer: true %>
     <%= favicon_link_tag(source = "favicon.ico") %>
   </head>
-  <body>
+  <body data-controller="nightmode" data-target="nightmode.page">
     <%= render "shared/navbar" %>
     <%= yield %>
     <p class="notice"><%= notice %></p>
