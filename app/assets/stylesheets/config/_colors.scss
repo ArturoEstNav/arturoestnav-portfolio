@@ -1,11 +1,17 @@
 // Define variables for your color scheme
-$red: #FD1015;
-// Main color
+// Main blue
 $blue: #032A51;
+// Red
+$red: #FD1015;
+// Secondary color
+$gray: #383838;
+// lightest gray
+// CFCFCF
+// Body background
+$light-gray: #FCFCFC;
+// diluted gray
+$diluted-gray: transparentize($light-gray, .2);
+
 $yellow: #FFC65A;
 $orange: #E67E22;
 $green: #1EDD88;
-// Secondary color
-$gray: #383838;
-// Body background
-$light-gray: #F7F7F7;

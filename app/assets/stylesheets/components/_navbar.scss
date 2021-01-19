@@ -1,13 +1,12 @@
 .custom-navbar-main, .custom-navbar-footer {
   display: flex;
   justify-content: center;
-  margin: 0;
   width: 100%;
 }
 
 .custom-navbar-main {
   position: fixed;
-  background: linear-gradient(0deg, rgba(247,247,247,0) 0%, rgba(247,247,247,1) 20%, rgba(247,247,247,1) 100%);
+  background: linear-gradient(0deg, transparent, $diluted-gray, $light-gray);
 }
 
 .custom-navbar-footer {
