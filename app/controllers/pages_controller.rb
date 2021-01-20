@@ -8,7 +8,7 @@ class PagesController < ApplicationController
                 rails: "portfolio-icon-06_tqfoih",
                 heroku: "portfolio-icon-01_r0a8pf",
                 ruby: "portfolio-icon-05_fd8edc",
-                css: "portfolio-icon-03_jlxhse",
+                sass: "portfolio-icon-03_jlxhse",
                 git: "portfolio-icon-02_bpkjvi" }
 
     @contact = Contact.new
