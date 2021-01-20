@@ -10,7 +10,7 @@
   <div class="container-language">
     <% icons.each do |language, url| %>
       <div >
-        <%= cl_image_tag url, crop: :fill, width: 30, height: 30 %>
+        <%= cl_image_tag url, crop: :fill, width: 30, height: 30, class: "img-dark"%>
         <p><%= language.capitalize %></p>
       </div>
     <% end %>

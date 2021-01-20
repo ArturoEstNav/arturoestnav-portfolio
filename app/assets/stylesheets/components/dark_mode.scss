@@ -1,7 +1,32 @@
 .dark-mode {
   // Backgrounds
-  background-color: red;
-  color: white;
-  // Navbar
-}
+  background-color: $black-background;
 
+  .custom-navbar-main {
+    background: linear-gradient(0deg, transparent, $diluted-black, $black-background);
+  }
+
+  .custom-navbar-footer {
+    background-color: $blue;
+  }
+
+  h1, h2, h3, h4, p, a, .btn, .link,
+  .custom-navbar-main, .custom-navbar-footer {
+    color: white;
+  }
+
+  a, .btn, .link {
+    &:hover{
+      opacity: 0.7;
+    }
+  }
+  // images
+  .img-dark {
+    background-color: white;
+    border-radius: 4px;
+    border: 1.25px solid white;
+  }
+
+
+
+}
