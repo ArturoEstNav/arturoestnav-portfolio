@@ -1,15 +1,19 @@
 <div>
   <div class="container-section">
     <h3>Get to know me</h3>
-    <p> Prior to taking formal training, I spent several months teaching myself basic HTML, CSS and Javascript.<br>
-        I eventually enrolled in Le Wagon's full-stack programming bootcamp and I am looking forward to code full time and keep
-        developing my programmer skills.
-    </p>
+    <div class="text-body">
+      <p> As a licensed graphic designer I taught myself basic HTML,
+        CSS, and basic Javascript which paved the way to swap careers
+        to software development. Later I got my Ruby on Rails formation
+        n Le Wagon's full-stack programming Bootcamp and to this day I
+        keep working on improving my programming skills.
+      </p>
+    </div>
   </div>
   <h4> Technical skills </h4>
   <div class="container-language">
     <% icons.each do |language, url| %>
-      <div >
+      <div class="text-body">
         <%= cl_image_tag url, crop: :fill, width: 30, height: 30, class: "img-dark"%>
         <p><%= language.capitalize %></p>
       </div>
