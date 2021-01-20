@@ -7,28 +7,12 @@
       <!-- Remote scanner starts here -->
       <div class="container-project">
         <div class="project-image">
-          <%= cl_image_tag "remote-scanner-1_o4w8kr", height: 190, width: 330, crop: :fill %>
-          <!-- <%= cl_image_tag "remote-scanner-mobile_zkmni5", height: 190, width: 330, crop: :fill %> -->
-        </div>
-        <!-- Carousel starts here-->
-       <!--  <div>
-          <div class="custom-carousel" id="remote-scanner">
-            <div class="custom-controls">
-              <div class="carousel-control-prev"><i class="fas fa-caret-left"></i></div>
-              <div class="carousel-control-next"><i class="fas fa-caret-right"></i></div>
-            </div>
-            <div class="custom-carousel-track">
-              <%= cl_image_tag "remote-scanner-1_o4w8kr", height: 190, width: 330, crop: :fill %>
-              <%= cl_image_tag "remote-scanner-2_tv0x0v", height: 190, width: 330, crop: :fill %>
-              <%= cl_image_tag "remote-scanner-mobile_zkmni5", height: 190, width: 330, crop: :fill %>
-            </div>
-          </div>
-        </div> -->
-        <!-- Carousel ends here-->
+          <%= cl_image_tag "remote-scanner-1_o4w8kr", height: 190, width: 330, crop: :fill %>        </div>
+
         <div class="project-description">
           <h3><%= Project.first.name %></h3>
           <p> <%= Project.first.description %> </p>
-          <%= link_to "Visit page", Project.first.url, target: :_blank, class: "link" %>
+          <%= link_to "Visit page", Project.first.url, target: :_blank, class: "link text-red" %>
         </div>
       </div>
     </li>
@@ -37,27 +21,11 @@
       <div class="container-project">
         <div class="project-image">
           <%= cl_image_tag "clarify-1_f8mobf", height: 190, width: 330, crop: :fill %>
-          <!-- <%= cl_image_tag "clarify-mobile_s9uxwp", height: 190, width: 330, crop: :fill %> -->
         </div>
-        <!-- Carousel starts here-->
-        <!-- <div>
-          <div class="custom-carousel" id="clarify">
-            <div class="custom-controls">
-              <div class="carousel-control-prev"><i class="fas fa-caret-left"></i></div>
-              <div class="carousel-control-next"><i class="fas fa-caret-right"></i></div>
-            </div>
-            <div class="custom-carousel-track">
-              <%= cl_image_tag "clarify-1_f8mobf", height: 190, width: 330, crop: :fill %>
-              <%= cl_image_tag "clarify-2_ush7rf", height: 190, width: 330, crop: :fill %>
-              <%= cl_image_tag "clarify-mobile_s9uxwp", height: 190, width: 330, crop: :fill %>
-            </div>
-          </div>
-        </div> -->
-        <!-- Carousel ends here-->
         <div>
           <h3><%= Project.last.name %></h3>
           <p> <%= Project.last.description %> </p>
-          <%= link_to "Visit page", Project.last.url, target: :_blank, class: "link" %>
+          <%= link_to "Visit page", Project.last.url, target: :_blank, class: "link text-red" %>
         </div>
       </div>
     </li>

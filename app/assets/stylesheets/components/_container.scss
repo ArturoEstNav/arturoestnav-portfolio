@@ -27,11 +27,18 @@
 
 .mail {
   padding: 32px 0;
+
+  @media screen and (max-width: $small){
+    padding: 0;
+  }
 }
 
 .container-section {
   padding-bottom: 64px;
   margin-bottom: 64px;
+  @media screen and (max-width: $small){
+    padding: 0;
+  }
 }
 
 .text-body {
