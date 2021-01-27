@@ -1,22 +1,29 @@
-h1, h2, h3, h4, h5, h6  {
+body {
+  color: $black-background;
+}
+
+
+h1, h2, h3 {
   padding-bottom: 24px;
+  color: $blue;
 }
 
 h1 {
   text-align: center;
-  color: $blue;
-
   @media screen and (min-width: $small){
     text-align: left;
   }
 }
 
+h4 {
+
+}
 // This section is meant to override ugly character standard behavior
 // not necesarily text but undesirable characters
 
 a{
   text-decoration: none;
-  // color: inherit;
+  color: inherit;
   font-weight: 600;
   &:hover{
     text-decoration: none;
@@ -34,6 +41,6 @@ ul {
 }
 
 .text-red {
-  color: $red;
+  color: inherit;
+  font-weight: 600;
 }
-

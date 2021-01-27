@@ -10,7 +10,7 @@
           <%= cl_image_tag "remote-scanner-1_o4w8kr", height: 190, width: 330, crop: :fill %>        </div>
 
         <div class="project-description">
-          <h3><%= Project.first.name %></h3>
+          <h4><%= Project.first.name %></h4>
           <p> <%= Project.first.description %> </p>
           <%= link_to "Visit page", Project.first.url, target: :_blank, class: "link text-red" %>
         </div>
@@ -23,7 +23,7 @@
           <%= cl_image_tag "clarify-1_f8mobf", height: 190, width: 330, crop: :fill %>
         </div>
         <div>
-          <h3><%= Project.last.name %></h3>
+          <h4><%= Project.last.name %></h4>
           <p> <%= Project.last.description %> </p>
           <%= link_to "Visit page", Project.last.url, target: :_blank, class: "link text-red" %>
         </div>
