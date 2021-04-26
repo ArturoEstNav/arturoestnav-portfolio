@@ -11,7 +11,7 @@
 
         <div class="project-description">
           <h4><%= Project.first.name %></h4>
-          <p> <%= Project.first.description %> </p>
+          <p class="text-language"> <%= Project.first.description %> </p>
           <%= link_to "Visit page", Project.first.url, target: :_blank, class: "link text-red" %>
         </div>
       </div>
@@ -24,7 +24,7 @@
         </div>
         <div>
           <h4><%= Project.last.name %></h4>
-          <p> <%= Project.last.description %> </p>
+          <p class="text-language"> <%= Project.last.description %> </p>
           <%= link_to "Visit page", Project.last.url, target: :_blank, class: "link text-red" %>
         </div>
       </div>

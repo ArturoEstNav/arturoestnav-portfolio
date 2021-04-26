@@ -15,16 +15,15 @@ h1 {
   }
 }
 
-h4 {
-
-}
 // This section is meant to override ugly character standard behavior
 // not necesarily text but undesirable characters
+.text-language, .text-red, a {
+  font-weight: 600;
+}
 
 a{
   text-decoration: none;
   color: inherit;
-  font-weight: 600;
   &:hover{
     text-decoration: none;
     opacity: .7;
@@ -42,5 +41,4 @@ ul {
 
 .text-red {
   color: inherit;
-  font-weight: 600;
 }
