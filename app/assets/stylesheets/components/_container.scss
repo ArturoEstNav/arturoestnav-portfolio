@@ -11,14 +11,13 @@
 }
 
 .greeting {
-
   display: flex;
   align-items: center;
   justify-content: space-around;
   height: 100vh;
 }
 
-.about {
+.container-about {
   padding-top: 56px;
   @media screen and (min-width: $medium){
     display: flex;
@@ -77,28 +76,6 @@
   @media screen and (min-width: $medium){
     margin: 0 64px;
   }
-}
-
-
-.container-language {
-  display: flex;
-  flex-direction: column;
-  padding-bottom: 32px;
-
-  @media screen and (min-width: $small){
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-  }
-
-  @media screen and (min-width: $large){
-    grid-template-columns: 1fr 1fr 1fr;
-  }
-
-}
-
-.container-language img, .container-language p {
-  display: inline;
-  margin: 12px 0 12px 12px;
 }
 
 .container-temporary-contact {
