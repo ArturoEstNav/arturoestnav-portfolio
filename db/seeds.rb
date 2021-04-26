@@ -7,7 +7,7 @@ Project.destroy_all
 Technology.destroy_all
 
 technologies = ['Javascript', 'Postgresql', 'HTML 5', 'Ruby on Rails', 'Heroku',
-                'Sass', 'Git', 'Stimulus JS', 'Bootstrap']
+                'Sass', 'Git', 'Stimulus JS']
 technologies.each { |technology| Technology.create(name: technology) }
 
 puts "Creating Bugtracker project"
