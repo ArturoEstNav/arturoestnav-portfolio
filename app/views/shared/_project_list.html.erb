@@ -10,6 +10,7 @@
           <div class="project-description">
             <h4><%= project.name %></h4>
             <p class="text-language"> <%= project.description %> </p>
+            <p class="text-language"> <%= project.used_technologies %> </p>
             <%= link_to "Visit page", project.url, target: :_blank, class: "link text-red" %>
           </div>
           <!-- <%= cl_image_tag "remote-scanner-1_o4w8kr", height: 190, width: 330, crop: :fill %></div> -->
