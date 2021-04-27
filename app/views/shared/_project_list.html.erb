@@ -6,12 +6,10 @@
     <% @projects.each do |project| %>
       <li>
         <div class="container-project">
-          <% unless project.image_tags == [] %>
-            <% project.image_tags.each do |image_tag| %>
-              <div class="project-image">
-                <%= cl_image_tag image_tag.tag, height: 190, width: 330, crop: :fill %></div>
-              </div>
-            <% end %>
+          <% project.image_tags.each do |image_tag| %>
+            <div class="project-image">
+              <%= cl_image_tag image_tag.tag, height: 190, width: 330, crop: :fill %>
+            </div>
           <% end %>
           <div class="project-description">
             <h4><%= project.name %></h4>
