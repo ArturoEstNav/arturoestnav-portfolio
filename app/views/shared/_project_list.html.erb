@@ -6,15 +6,17 @@
     <% @projects.each do |project| %>
       <li>
         <div class="container-project">
-          <% project.image_tags.each do |image_tag| %>
-            <div class="project-image">
-              <%= cl_image_tag image_tag.tag, height: 190, width: 330, crop: :fill %></div>
-            </div>
+          <% unless project.image_tags == [] %>
+            <% project.image_tags.each do |image_tag| %>
+              <div class="project-image">
+                <%= cl_image_tag image_tag.tag, height: 190, width: 330, crop: :fill %></div>
+              </div>
+            <% end %>
           <% end %>
           <div class="project-description">
             <h4><%= project.name %></h4>
             <p class="text-language"> <%= project.description %> </p>
-            <p class="text-language"> <%= project.used_technologies %> </p>
+            <p class="text-language"> Technologies used: <%= project.used_technologies %> </p>
             <%= link_to "Visit page", project.url, target: :_blank, class: "link text-red" %>
           </div>
         </div>

@@ -5,15 +5,17 @@ Project.destroy_all
 ImageTag.destroy_all
 
 puts "Creating Bugtracker project"
+
 bugtracker = Project.new(
   name: "Versatile Bugtracker (Beta)",
   description: "Lightweight, easy to use online bugtracker for small businesses.",
   url: "https://versatile-bugtracker.herokuapp.com/",
-  used_technologies: ""
+  used_technologies: "Ruby on Rails, Sass, HTML 5, JavaScript, Stimulus JS, PostgreSQL, Heroku and Github"
 )
 bugtracker.save
 
 puts "Creating Remote Scanner project"
+
 remote_scanner = Project.new(
   name: "Remote scanner",
   description: "A job aggregator created to aid developers find remote employment options quickly
@@ -24,6 +26,7 @@ and gather all desirable postings in a single place.",
 remote_scanner.save
 
 puts "Creating Clarify project"
+
 clarify = Project.new(
   name: "Clarify",
   description: "An application developed with the intention of connecting wellbeing professionals with patients
@@ -34,10 +37,12 @@ through plans facilitating the track of individual progress and result compariso
 clarify.save
 
 puts 'Creating image tags'
+
 ImageTag.create(tag: 'clarify-1_f8mobf')
 ImageTag.create(tag: 'remote-scanner-1_o4w8kr')
 
 puts 'Creting image tags associations'
+
 ProjectImageTag.create(project: Project.find_by(name: 'Clarify'), image_tag: ImageTag.find_by(tag: 'clarify-1_f8mobf'))
 ProjectImageTag.create(project: Project.find_by(name: 'Remote scanner'), image_tag: ImageTag.find_by(tag: 'remote-scanner-1_o4w8kr'))
 
