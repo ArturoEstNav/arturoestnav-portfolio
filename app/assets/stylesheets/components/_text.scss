@@ -2,22 +2,22 @@ body {
   color: $black-background;
 }
 
-
 h1, h2, h3 {
-  padding-bottom: 24px;
   color: $blue;
+  padding-bottom: 28px;
 }
 
 h1 {
-  text-align: center;
-  @media screen and (min-width: $small){
-    text-align: left;
+  padding-bottom: 24px;
+  text-align: left;
+  @media screen and (max-width: $small){
+    text-align: center;
   }
 }
 
 // This section is meant to override ugly character standard behavior
 // not necesarily text but undesirable characters
-.text-language, .text-red, a {
+.text-language, .text-bold, a {
   font-weight: 600;
 }
 
@@ -36,9 +36,5 @@ ul {
 }
 
 .link {
-  color: inherit;
-}
-
-.text-red {
   color: inherit;
 }

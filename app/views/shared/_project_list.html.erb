@@ -5,6 +5,7 @@
   <ul>
     <% @projects.each do |project| %>
       <li>
+        <div></div>
         <div class="container-project">
           <% project.image_tags.each do |image_tag| %>
             <div class="project-image">
@@ -12,10 +13,18 @@
             </div>
           <% end %>
           <div class="project-description">
-            <h4><%= project.name %></h4>
-            <p class="text-language"> <%= project.description %> </p>
-            <p class="text-language"> Technologies used: <%= project.used_technologies %> </p>
-            <%= link_to "Visit page", project.url, target: :_blank, class: "link text-red" %>
+            <h3><%= project.name %></h3>
+            <div class="container-text">
+              <p>
+                <span class="text-bold">Project description: </span>
+                <%= project.description %>
+              </p>
+              <p>
+                <span class="text-bold">Technologies used: </span>
+                <%= project.used_technologies %>
+              </p>
+              <%= link_to "Visit page", project.url, target: :_blank, class: "link text-red" %>
+            </div>
           </div>
         </div>
       </li>
