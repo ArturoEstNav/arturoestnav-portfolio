@@ -44,8 +44,7 @@
   }
 }
 
-.container-about
-{
+.container-about {
   padding-top: 56px;
 }
 
@@ -59,7 +58,7 @@
 
 .container-section {
   padding-bottom: 64px;
-  margin-bottom: 64px;
+  margin-bottom: 12px;
   @media screen and (max-width: $small){
     padding: 0;
   }
