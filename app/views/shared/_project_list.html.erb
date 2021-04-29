@@ -23,7 +23,9 @@
                 <span class="text-bold">Technologies used: </span>
                 <%= project.used_technologies %>
               </p>
-              <%= link_to "Visit page", project.url, target: :_blank, class: "link text-red" %>
+              <div class="container-link-project">
+                <%= link_to "Visit page", project.url, target: :_blank, class: "custom-button button-project" %>
+              </div>
             </div>
           </div>
         </div>

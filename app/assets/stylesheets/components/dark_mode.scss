@@ -16,6 +16,10 @@
     background-color: $black-background;
   }
 
+  .custom-button {
+    border: 1px solid white;
+  }
+
   h2, h3, h4, a, .text-bold, .text-about-bullet,
   .container-greeing-accent, .custom-button {
     color: $light-blue;
