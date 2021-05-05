@@ -18,7 +18,7 @@ remote_scanner.save
 puts "Creating Bugtracker project"
 
 bugtracker = Project.new(
-  name: "Versatile Bugtracker (Beta)",
+  name: "Versatile Bugtracker",
   description: "Lightweight, easy to use online bugtracker for small businesses.",
   url: "https://versatile-bugtracker.herokuapp.com/",
   used_technologies: "Ruby on Rails, Sass, HTML 5, JavaScript, Stimulus JS, PostgreSQL, Heroku and Github"
@@ -38,12 +38,12 @@ clarify.save
 
 puts 'Creating image tags'
 
-ImageTag.create(tag: 'bugtracker-1_xczspz')
+ImageTag.create(tag: 'bugtracker-1_zpolmt')
 ImageTag.create(tag: 'remote-scanner-1_o4w8kr')
 ImageTag.create(tag: 'clarify-1_f8mobf')
 
 puts 'Creting image tags associations'
 
-ProjectImageTag.create(project: Project.find_by(name: 'Versatile Bugtracker (Beta)'), image_tag: ImageTag.find_by(tag: 'bugtracker-1_isjeca'))
+ProjectImageTag.create(project: Project.find_by(name: 'Versatile Bugtracker'), image_tag: ImageTag.find_by(tag: 'bugtracker-1_zpolmt'))
 ProjectImageTag.create(project: Project.find_by(name: 'Remote scanner'), image_tag: ImageTag.find_by(tag: 'remote-scanner-1_o4w8kr'))
 ProjectImageTag.create(project: Project.find_by(name: 'Clarify'), image_tag: ImageTag.find_by(tag: 'clarify-1_f8mobf'))
