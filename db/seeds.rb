@@ -38,7 +38,7 @@ clarify.save
 
 puts 'Creating image tags'
 
-ImageTag.create(tag: 'bugtracker-1_isjeca')
+ImageTag.create(tag: 'bugtracker-1_loiirn')
 ImageTag.create(tag: 'remote-scanner-1_o4w8kr')
 ImageTag.create(tag: 'clarify-1_f8mobf')
 
