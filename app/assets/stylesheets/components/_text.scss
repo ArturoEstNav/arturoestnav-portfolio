@@ -19,6 +19,7 @@ h1 {
 // not necesarily text but undesirable characters
 .text-language, .text-bold, a {
   font-weight: 600;
+  color: inherit;
 }
 
 a{
