@@ -42,7 +42,6 @@ ImageTag.create(tag: 'bugtracker-1_loiirn')
 ImageTag.create(tag: 'remote-scanner-1_o4w8kr')
 ImageTag.create(tag: 'clarify-1_f8mobf')
 
-
 puts 'Creting image tags associations'
 
 ProjectImageTag.create(project: Project.find_by(name: 'Versatile Bugtracker (Beta)'), image_tag: ImageTag.find_by(tag: 'bugtracker-1_isjeca'))
