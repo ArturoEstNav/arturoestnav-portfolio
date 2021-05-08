@@ -40,3 +40,8 @@ yarn-debug.log*
 # Ignore Mac and Linux file system files
 *.swp
 .DS_Store
+
+#ignore SSL files
+server.csr
+server.key
+server.pass.key
