@@ -5,8 +5,18 @@
   .custom-navbar-footer, form .text-about-item, h1,
   .container-mail, .icon-sizes, .icon-image-sizes,
   .icon-sizes-solid, a, .custom-button, .container-project,
-  .project-description-text {
+  .project-description-text, .form-control {
     color: white;
+  }
+
+  input, .form-control {
+    background-color: transparent;
+
+    &:active, &:focus, &:hover, &:focus-within {
+      background-color: transparent;
+      color: white;
+      border-color: $light-gray;
+    }
   }
 
   .custom-navbar-main {
