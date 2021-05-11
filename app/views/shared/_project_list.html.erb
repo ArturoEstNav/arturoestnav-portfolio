@@ -1,49 +1,30 @@
-<!-- <div class="container-projects"> -->
-  <h2>
-    Software projects
-  </h2>
-
-
-  <ul>
-    <% @projects.each do |project| %>
-      <li>
-        <div></div>
-        <div class="container-project">
-          <% project.image_tags.each do |image_tag| %>
-            <div class="project-image">
-              <%= cl_image_tag image_tag.tag, height: 190, width: 330, crop: :fill %>
-            </div>
-          <% end %>
-          <div class="project-description">
-            <h3><%= project.name %></h3>
-            <div class="container-text">
-              <p>
-                <span class="text-bold">Project description: </span>
-                <%= project.description %>
-              </p>
-              <p>
-                <span class="text-bold">Technologies used: </span>
-                <%= project.used_technologies %>
-              </p>
-              <div class="container-link-project">
-                <%= link_to "Visit page", project.url, target: :_blank, class: "custom-button button-project" %>
-              </div>
-            </div>
+<h2>
+  Software projects
+</h2>
+<% @projects.each do |project| %>
+  <div class="swiper-slide">
+    <div class="container-project">
+      <% project.image_tags.each do |image_tag| %>
+        <div class="project-image">
+          <%= cl_image_tag image_tag.tag, height: 190, width: 330, crop: :fill %>
+        </div>
+      <% end %>
+      <div class="project-description">
+        <h3><%= project.name %></h3>
+        <div class="container-text">
+          <p>
+            <span class="text-bold">Project description: </span>
+            <%= project.description %>
+          </p>
+          <p>
+            <span class="text-bold">Technologies used: </span>
+            <%= project.used_technologies %>
+          </p>
+          <div class="container-link-project">
+            <%= link_to "Visit page", project.url, target: :_blank, class: "custom-button button-project" %>
           </div>
         </div>
-      </li>
-    <% end %>
-  </ul>
-
-
-<!--
-<div data-controller="carousel" class="swiper-container">
-  <div class="swiper-wrapper">
-    <div class="swiper-slide">
-
-
+      </div>
     </div>
   </div>
-</div>
- -->
-<!-- </div> -->
+<% end %>
