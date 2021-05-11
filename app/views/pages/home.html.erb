@@ -12,7 +12,9 @@
   <%= render "shared/about" %>
 </div>
 <div class="custom-container" id="projects">
-  <%= render "shared/project_list", projects: @projects %>
+  <div class="container-projects">
+    <%= render "shared/project_list", projects: @projects %>
+  </div>
 </div>
 <div class="custom-container">
   <div class="mail">
