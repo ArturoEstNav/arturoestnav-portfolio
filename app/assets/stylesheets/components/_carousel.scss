@@ -1,18 +1,18 @@
 
 .carousel-control-prev,
 .carousel-control-next {
-
+  color: red;
   position: inherit;
 }
 
 .fa-caret-left::after,
 .fa-caret-right::after {
-
+  color: red;
 }
 
 .fa-caret-left::before,
 .fa-caret-right::before {
-
+  color: red;
 }
 
 .custom-card-content {
@@ -68,7 +68,7 @@
   }
   .custom-carousel-slide {
     position: absolute;
-    transition: 250ms ease-in-out;
+    // transition: 250ms ease-in-out;
     // border-radius: 4px;
     // box-sizing: border-box;
     // padding: 16px;
@@ -90,10 +90,18 @@
       // margin: 16px;
     }
 
-    &:hover {
-      box-shadow: 4px 4px 4px rgba(60, 69, 65, .25);
-    }
-
 
   }
+}
+
+.custom-controls {
+  padding: 0 16px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.custom-carousel-buttoncustom-carousel-button, .fa-caret-left,
+.fa-caret-right {
+  display: inline-block;
+  color: red;
 }
