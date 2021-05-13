@@ -12,7 +12,7 @@
         <li class="custom-carousel-slide">
           <div class="container-project">
             <% project.image_tags.each do |image_tag| %>
-              <div class="project-image">
+              <div class="container-image">
                 <%= cl_image_tag image_tag.tag, height: 190, width: 330, crop: :fill %>
               </div>
             <% end %>
@@ -28,7 +28,8 @@
                   <%= project.used_technologies %>
                 </p>
                 <div class="container-link-project">
-                  <%= link_to "Visit page", project.url, target: :_blank, class: "custom-button button-project" %>
+                  <%= link_to "Visit page", project.url, target: :_blank, 
+                  class: "custom-button button-project" %>
                 </div>
               </div>
             </div>

@@ -1,18 +1,6 @@
-
-.carousel-control-prev,
-.carousel-control-next {
-  color: red;
-  position: inherit;
-}
-
-.fa-caret-left::after,
-.fa-caret-right::after {
-  color: red;
-}
-
-.fa-caret-left::before,
-.fa-caret-right::before {
-  color: red;
+.custom-carousel-button {
+  display: inline-block;
+  color: $blue;
 }
 
 .custom-card-content {
@@ -100,8 +88,44 @@
   justify-content: space-between;
 }
 
-.custom-carousel-buttoncustom-carousel-button, .fa-caret-left,
-.fa-caret-right {
-  display: inline-block;
-  color: red;
+
+// inner slide contents
+
+.container-image {
+  margin: 24px 0;
+  padding: 0 0 32px 0;
+
+  @media screen and (min-width: $medium){
+    margin: 0 64px;
+  }
+}
+
+.projects {
+  height: auto;
+}
+
+.container-project {
+  display: flex;
+  flex-direction: column;
+  margin: 24px 0;
+  padding-bottom: 64px;
+  align-items: center;
+
+  @media screen and (min-width: $medium){
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+  }
+}
+
+.container-text, .project-description-text {
+  padding-left: 32px;
+
+  @media screen and (max-width: $small){
+    padding-left: 24px;
+  }
+}
+
+.container-link-project {
+  margin-top: 24px;
 }
