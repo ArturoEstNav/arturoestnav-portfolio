@@ -58,7 +58,11 @@
 
 .custom-container-section{
   display: block;
-  height: 100vh;
+  height: 800px;
+
+  @media screen and (min-width: $medium){
+    height: 600px;
+  }
 }
 
 .container-temporary-contact {

@@ -1,3 +1,8 @@
+.custom-container-section{
+  display: block;
+  height: auto;
+} 
+
 .custom-carousel-button {
   display: inline-block;
   color: $blue;
@@ -10,56 +15,17 @@
 .custom-carousel-header {
   .custom-controls {
     font-size: 20pt;
-
-    div:hover {
-      cursor: pointer;
-    }
   }
 }
 
 .custom-carousel-track {
-  // height: 300px;
-  // width: 100%;
   position: relative;
-  // padding: 0;
   transition: transform 250ms ease-in;
 
-  @media screen and (min-width: $small) {
-    // border: 5px solid red;
-    // height: 300px;
-    // padding: 0px;
-  }
-
-  @media screen and (min-width: $medium) {
-    // border: 1px solid blue;
-    // height: 300px;
-    // padding: 0px;
-  }
   .custom-carousel-slide {
     position: absolute;
-    // transition: 250ms ease-in-out;
-    // border-radius: 4px;
-    // box-sizing: border-box;
-    // padding: 16px;
-    // margin: 0;
-    // height: 94%;
+    transition: 250ms ease-in-out;
     width: 100%;
-    // top: 0;
-    // left: 0;
-
-    @media screen and (min-width: $small) {
-      // width: 49%;
-      // top: 0;
-      // left: 0;
-      // margin: 0 12px;
-    }
-
-    @media screen and (min-width: $medium) {
-      // width: 33%;
-      // margin: 16px;
-    }
-
-
   }
 }
 
@@ -69,15 +35,12 @@
   justify-content: space-between;
 }
 
-
-// inner slide contents
-
 .container-image {
   margin: 24px 0;
   padding: 0 0 32px 0;
 
   @media screen and (min-width: $medium){
-    margin: 0 64px;
+    margin: 0 48px;
   }
 }
 
@@ -87,16 +50,9 @@
 
 .container-project {
   display: flex;
-  // flex-direction: column;
-  // margin: 24px 0;
-  // align-items: center;
+  flex-direction: column;
+  align-items: center;
   width: 100% !important;
-
-  @media screen and (min-width: $medium){
-    display: flex;
-    // flex-direction: row;
-    // align-items: start;
-  }
 }
 
 .project-description {
@@ -104,11 +60,11 @@
 }
 
 .container-text {
-  padding-left: 32px;
-
-  // @media screen and (max-width: $small){
-  //   padding-left: 24px;
-  // }
+  padding-left: 0px;
+  
+  @media screen and (min-width: $medium){
+    padding-left: 32px;
+  }
 }
 
 .container-link-project {
