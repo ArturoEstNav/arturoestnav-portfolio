@@ -3,31 +3,12 @@
   color: $blue;
 }
 
-.custom-card-content {
-  overflow: auto;
-
-}
-
-#new_match a {
-  padding: 0;
-}
-
-// custom carousel
-
 .custom-carousel {
   overflow: hidden;
 }
 
 .custom-carousel-header {
-  // padding: 0 16px;
-  // display: flex;
-  justify-content: space-between;
-
   .custom-controls {
-    // width: 80px;
-    // display: flex;
-    // justify-content: space-between;
-    // align-items: center;
     font-size: 20pt;
 
     div:hover {
@@ -39,7 +20,7 @@
 .custom-carousel-track {
   // height: 300px;
   // width: 100%;
-  // position: relative;
+  position: relative;
   // padding: 0;
   transition: transform 250ms ease-in;
 
@@ -62,7 +43,7 @@
     // padding: 16px;
     // margin: 0;
     // height: 94%;
-    // width: 100%;
+    width: 100%;
     // top: 0;
     // left: 0;
 
@@ -100,30 +81,34 @@
   }
 }
 
-.projects {
+.container-projects {
   height: auto;
 }
 
 .container-project {
   display: flex;
-  flex-direction: column;
-  margin: 24px 0;
-  padding-bottom: 64px;
-  align-items: center;
+  // flex-direction: column;
+  // margin: 24px 0;
+  // align-items: center;
+  width: 100% !important;
 
   @media screen and (min-width: $medium){
     display: flex;
-    flex-direction: row;
-    align-items: start;
+    // flex-direction: row;
+    // align-items: start;
   }
 }
 
-.container-text, .project-description-text {
+.project-description {
+  width: 100%;
+}
+
+.container-text {
   padding-left: 32px;
 
-  @media screen and (max-width: $small){
-    padding-left: 24px;
-  }
+  // @media screen and (max-width: $small){
+  //   padding-left: 24px;
+  // }
 }
 
 .container-link-project {
