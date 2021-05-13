@@ -35,7 +35,6 @@ document.addEventListener('turbolinks:load', () => {
 });
 
 import 'controllers'
-// MESSY CAROUSEL LOGIC
 
 const setCarousel = (projectList) => {
   // add a class to 1st element in the array of carousel
@@ -72,7 +71,6 @@ const setCarousel = (projectList) => {
     let nextSlide = currentSlide.nextElementSibling;
 
     moveToSlide(track, currentSlide, nextSlide);
-    // Make sure that it cant get off limits
   })
 }
 

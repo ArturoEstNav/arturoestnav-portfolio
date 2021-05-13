@@ -6,6 +6,10 @@
 .custom-carousel-button {
   display: inline-block;
   color: $blue;
+
+  &:hover {
+    cursor: pointer;
+  }
 }
 
 .custom-carousel {
